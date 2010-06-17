@@ -1,0 +1,64 @@
+body {
+	margin: 0px;
+	padding: 0px;}
+div#left_bar {
+	height: 100%;
+	width: 182px;
+	margin: 0px;
+	padding: 0px;
+	float: left;}
+img.logo {
+	padding: 10px;
+	border-right: 2px solid #33CC33;
+	border-bottom: 2px solid #33CC33;
+	height: auto;
+	width: 160px;}
+div.left_content {
+	border-right: 2px solid #33CC33;
+	background: #3333FF;
+	color: #FFFFFF;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-left: 5px;
+	padding-right: 5px;}
+
+div#page {
+	margin-left: 183px;}
+div#nav {
+	display: table; 
+	overflow: hidden;
+	height: 240px;
+	width: 100%;
+	margin-bottom: 0px;
+	border-bottom: 2px solid #33CC33;
+	background-image: url(images/house.png);
+	background-repeat: no-repeat;
+	background-position: top right;}
+div#nav a {
+	display: block;
+	text-decoration: none;
+	color: #000000;
+	font-family: "Trebuchet MS", sans-serif;
+	font-style: bold;
+	font-size: 20px;}
+div#nav a:hover {
+	color: #707070;}
+body#home a.homenav {
+	color: #3333FF;}	
+
+div.nav_left {
+	text-align: center;}
+div.nav_left a {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: "Trebuchet MS", sans-serif;
+	font-style: bold;
+	font-size: 12px;}
+div#content {
+	margin-top: 0px;
+	margin-left: 180px;
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;}
