@@ -1,4 +1,6 @@
 html, body {
+  height: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
 }
@@ -48,11 +50,19 @@ div#nav a:hover {
 body#home a.homenav {
 	color: #3333FF;
 	}
+	
+/*************** Wrapper ***************/
+div#wrapper {
+  height: 100%;
+  width: 100%;
+}
+
 
 /*************** Left Bar ***************/
 
 div#left_bar {
   float: left;
+  height: 100%;
   width: 165px;
   background: #0000FF;
 }
@@ -60,9 +70,10 @@ div#left_bar {
 /*************** Content ***************/
 
 div#content {
-  margin-top: -16px;
+  height: 100%;
   margin-left: 165px;
   padding-top: 10px;
+  padding-bottom: -5px;
   padding-left: 10px;
   border-left: 2px solid #00CC00;
 }
