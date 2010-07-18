@@ -3,6 +3,7 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  background: #ffffff url(./images/dark_background.png) repeat-y 0% 0
 }
 
 /*************** Header ***************/
@@ -52,6 +53,7 @@ body#home a.homenav {
 	}
 	
 /*************** Wrapper ***************/
+
 div#wrapper {
   height: 100%;
   width: 100%;
@@ -62,20 +64,16 @@ div#wrapper {
 
 div#left_bar {
   float: left;
-  height: 100%;
   width: 165px;
-  background: #0000FF;
 }
 
 /*************** Content ***************/
 
 div#content {
-  height: 100%;
   margin-left: 165px;
   padding-top: 10px;
   padding-bottom: -5px;
   padding-left: 10px;
-  border-left: 2px solid #00CC00;
 }
 
 
