@@ -54,7 +54,6 @@ body#home a.homenav {
 	
 /*************** Wrapper ***************/
 div#wrapper {
-  height: 100%;
   width: 100%;
 }
 
@@ -63,9 +62,7 @@ div#wrapper {
 
 div#left_bar {
   float: left;
-  height: 100%;
   width: 165px;
-  background: #0000FF;
 }
 
 /*************** Content ***************/
@@ -76,7 +73,6 @@ div#content {
   padding-top: 10px;
   padding-bottom: -5px;
   padding-left: 10px;
-  border-left: 2px solid #00CC00;
 }
 
 
