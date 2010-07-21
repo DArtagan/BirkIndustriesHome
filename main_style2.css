@@ -11,7 +11,7 @@ html, body {
 div#header {
   height: 220px;
   border-bottom: 4px solid #0000FF; 
-  background-image: url(images/house.png);
+  background-image: url(images/house_background.png);
   background-position:right top;
   background-repeat:no-repeat;
 }
