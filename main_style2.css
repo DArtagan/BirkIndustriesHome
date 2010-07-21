@@ -3,14 +3,14 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #ffffff url(./images/dark_background.png) repeat-y 0% 0
+  background: #ffffff url(./images/dark_background.png) repeat-y 0% 0;
 }
 
 /*************** Header ***************/
 
 div#header {
   height: 220px;
-  border-bottom: 2px solid #00CC00; 
+  border-bottom: 4px solid #0000FF; 
   background-image: url(images/house.png);
   background-position:right top;
   background-repeat:no-repeat;
@@ -51,29 +51,45 @@ div#nav a:hover {
 body#home a.homenav {
 	color: #3333FF;
 	}
-	
-/*************** Wrapper ***************/
-
-div#wrapper {
-  height: 100%;
-  width: 100%;
-}
-
 
 /*************** Left Bar ***************/
 
 div#left_bar {
   float: left;
   width: 165px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+	
+/*************** Wrapper ***************/
+
+div#wrapper {
+  margin-left: 167px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  background: #666666 url(./images/shadow_bottom.png) repeat-x 0% 0;
 }
 
 /*************** Content ***************/
 
 div#content {
-  margin-left: 165px;
-  padding-top: 10px;
-  padding-bottom: -5px;
-  padding-left: 10px;
+  margin: 0px;
+  padding: 15px;
+  padding-top: 1px;
+  border: 4px solid #1f1f20;
+  background: #ffffff;
 }
 
+/*************** Footer ***************/
+div#footer {
+  height: 70px;
+  padding: 20px;
+  background: #ffffff;
+  border-top: 4px solid #0000FF;
+  text-align: center;
+}
 
