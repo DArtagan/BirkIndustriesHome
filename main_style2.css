@@ -84,6 +84,17 @@ div#content {
   background: #ffffff;
 }
 
+h2 {
+  border-bottom: 1px solid #cccccc;
+}
+
+p.compact {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
 /*************** Footer ***************/
 div#footer {
   height: 70px;
@@ -93,3 +104,23 @@ div#footer {
   text-align: center;
 }
 
+div#nav_footer a {
+  margin-left: -3px;
+  margin-right: -3px;
+  padding: 5px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  text-decoration: none;
+	color: #000000;
+	font-family: "Trebuchet MS", sans-serif;
+	font-style: bold;
+	font-size: 15px;
+}
+	
+div#nav_footer a:hover {
+	color: #707070;
+	}
+
+body#home a.homenav {
+	color: #3333FF;
+	}
