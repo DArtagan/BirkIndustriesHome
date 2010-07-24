@@ -1,110 +1,128 @@
 html, body {
-	margin: 0px;
-	padding: 0px;
-	background-color: #111164;}
-.center {
-	text-align: center;}
-.green {
-	color: #00CC00;}
-.blue {
-	color: #3333FF;}
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #ffffff url(./images/dark_background.png) repeat-y 0% 0;
+}
 
-div.header {
-	margin-top: 20px;
-	border-top: 4px solid #33CC33;
-	border-bottom: 4px solid #33CC33;
-	width: 100%;
-	clear: both;
-	text-align: center;
-	background: #FFFFFF;}
-a.header {
-	font-size: 125%;
-	font-family: "Britannic Bold", Britannic, Verdana, sans-serif;
-	color: #3333FF;
-	text-decoration:none;}
-img.logo {
-	margin-top: 15px;
-	margin-bottom: 5px;
-	height: 250px;
-	border: none;
-	width: auto;}
-div.nav {
-	clear: both;
-	height: 1.5em;
-	margin-left: 30%;
-	margin-right: 30%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-top: 2px solid #33CC33;
-	text-align: center;}
-a.nav {
-	width: 200px;
-	padding-left: 5px;
-	padding-right: 5px;
-	border-left: 1px solid #707070;
-	border-right: 1px solid #707070;
-	display: inline;
+/*************** Header ***************/
+
+div#header {
+  height: 220px;
+  border-bottom: 4px solid #0000FF; 
+  background-image: url(images/house_background.png);
+  background-position:right top;
+  background-repeat:no-repeat;
+}
+
+div#header img {
+  float: left;
+  height: 200px;
+  width: 145px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 2px solid #00CC00;
+  background: #FFFFFF;
+}
+
+div#nav {
+  height: 225px;
+	display: table; 
+	overflow: hidden;
+}
+
+div#nav a {
+  margin-left: 5px;
+	display: block;
 	text-decoration: none;
 	color: #000000;
 	font-family: "Trebuchet MS", sans-serif;
 	font-style: bold;
-	font-size: 20px;}
-a.nav:hover {
-	color: #707070;}
-body#home a.homenav,
-body#about a.aboutnav,
-body#mission a.missionnav {
-	color: #A0A0A0;
-	background-color: #FFFFFF}
+	font-size: 20px;
+	}
 	
-div.container {
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 30px;
-	border: 7px solid #3333FF;
-	background-color: #FFFFFF;}
+div#nav a:hover {
+	color: #707070;
+	}
 
+body#home a.homenav,
+body#mission a.missionnav {
+	color: #3333FF;
+	}
 
-	div.content {
-	border-bottom: 5px solid #33CC33;
-	clear: both;
-	text-align:left;
-	color: #000000;
-	font-family: "Agency FB", sans-serif;
-	font-size: 1.25em;
-	letter-spacing: 1.2px;
-	word-spacing: 2.3px;
-	line-height: 150%;}
+/*************** Left Bar ***************/
+
+div#left_bar {
+  float: left;
+  width: 165px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+	
+/*************** Wrapper ***************/
+
+div#wrapper {
+  margin-left: 167px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  background: #666666 url(./images/shadow_bottom.png) repeat-x 0% 0;
+}
+
+/*************** Content ***************/
+
+div#content {
+  margin: 0px;
+  padding: 15px;
+  padding-top: 1px;
+  border: 4px solid #1f1f20;
+  background: #ffffff;
+}
+
 h2 {
-	text-align:center;
-	letter-spacing: 1.2px;
-	word-spacing: 2.3px;}
-h3 {
-	margin-top: 30px;
-	margin-bottom: 10px;
-	border-top: 1px solid #A0A0A0;
-	border-bottom: 1px solid #A0A0A0;}
-p {
-	padding-top: 0px;
-	margin-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;}
-p.center {
-	text-align: center;}
+  border-bottom: 1px solid #cccccc;
+}
+
 p.compact {
-	padding-top: 0px;
-	margin-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;}
-div.footer {
-	float: right;
-	clear: both;
-	margin-top: 50px;
-	padding-bottom: 20px;
-	text-align: right;
-	padding-right: 10px;
-	color: #FFFFFF;}
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+/*************** Footer ***************/
+div#footer {
+  height: 70px;
+  padding: 20px;
+  background: #ffffff;
+  border-top: 4px solid #0000FF;
+  text-align: center;
+}
+
+div#nav_footer a {
+  margin-left: -3px;
+  margin-right: -3px;
+  padding: 5px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  text-decoration: none;
+	color: #000000;
+	font-family: "Trebuchet MS", sans-serif;
+	font-style: bold;
+	font-size: 15px;
+}
+	
+div#nav_footer a:hover {
+	color: #707070;
+	}
+
+body#home a.homenav,
+body#mission a.missionnav {
+	color: #3333FF;
+	}
