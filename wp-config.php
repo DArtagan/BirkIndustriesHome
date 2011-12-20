@@ -22,7 +22,7 @@ define('DB_NAME', 'db353791986');
 define('DB_USER', 'dbo395674312');
 
 /** MySQL database password */
-define('DB_PASSWORD', '11I?9bCEId74f');
+define('DB_PASSWORD', 'hK!48e4BjqeY');
 
 /** MySQL hostname */
 define('DB_HOST', 'db2758.perfora.net');
