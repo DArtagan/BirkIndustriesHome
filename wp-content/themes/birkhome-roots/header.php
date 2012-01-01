@@ -44,7 +44,7 @@
               $$value['id'] = $value['std']; 
             } else { 
               $$value['id'] = get_option( $value['id'] ); 
-              vardump(get_option($value['id']);
+              vardump(get_option($value['id']));
             }
           }
         ?>
