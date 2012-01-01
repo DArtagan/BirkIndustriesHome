@@ -23,7 +23,7 @@ $childoptions = array (
         "cols" => "94")
 			 ),
 
-	array(    "type" => "close")
+	array("type" => "close")
 );
 
 function childtheme_add_admin() {

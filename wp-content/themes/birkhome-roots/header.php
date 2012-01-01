@@ -45,7 +45,6 @@
               echo "Nope";
             } else { 
               $$value['id'] = get_option( $value['id'] ); 
-              vardump(get_option($value['id']));
             }
           }
         ?>
