@@ -1,5 +1,10 @@
 <?php 
 
+/**
+ * child-theme options activation
+**/
+include(STYLESHEETPATH."/child_options.php");
+
 // Header Image Settings
 // http://codex.wordpress.org/Function_Reference/add_custom_image_header
 define('HEADER_TEXTCOLOR', '');
