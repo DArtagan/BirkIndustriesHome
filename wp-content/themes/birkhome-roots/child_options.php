@@ -5,7 +5,7 @@
 // the name of the theme
 $childname = "BirkHome Theme Options";
 // an abbreviation of the theme's name
-$childshortname = "BH";
+$childshortname = "bh";
 
 $childoptions = array (
 	array ( "name" => "Welcome Message",
