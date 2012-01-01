@@ -123,6 +123,7 @@ case 'textarea':
 						echo __($value['std'],'thematic');
 				}?></textarea><br /><?php echo __($value['desc'],'thematic'); ?></td>
 		</tr>
+    break;
 }
 }
 ?>
