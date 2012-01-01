@@ -16,8 +16,12 @@ $childoptions = array (
 	array (	"name" => "Header Contact Information",
 			"desc" => "The HTML for the contact information displayed in the header of the page.",
 			"id" => $childshortname . "_headerContactInfo",
-			"type" => "text",
-			"std" => __("") ),
+      "std" => __("")
+			"type" => "textarea",
+      "options" => array(
+        "rows" => "5",
+        "cols" => "94")
+			 ),
 
 	array(    "type" => "close")
 );
@@ -106,6 +110,19 @@ case 'text':
 
 <?php
 break;
+
+case 'textarea':
+		$ta_options = $value['options'];
+		?>
+		<tr valign="top">
+			<th scope="row"><label for="<?php echo $value['id']; ?>"><?php echo __($value['name'],'thematic'); ?></label></th>
+			<td><textarea name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="<?php echo $ta_options['rows']; ?>"><?php
+				if( get_option($value['id']) != "") {
+						echo __(stripslashes(get_option($value['id'])),'thematic');
+					}else{
+						echo __($value['std'],'thematic');
+				}?></textarea><br /><?php echo __($value['desc'],'thematic'); ?></td>
+		</tr>
 }
 }
 ?>
