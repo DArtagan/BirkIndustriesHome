@@ -40,14 +40,18 @@
           // Retrieve BirkHome Theme Options
           global $childoptions;
           foreach ($childoptions as $value) {
-            if (get_option( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; }
-            else { $$value['id'] = get_option( $value['id'] ); }
+            if (get_option( $value['id'] ) === FALSE) { 
+              $$value['id'] = $value['std']; 
+            } else { 
+              $$value['id'] = get_option( $value['id'] ); 
+              vardump(get_option($value['id']);
+            }
           }
         ?>
         <a id="logo" href="<?php echo home_url(); ?>/">
           <img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>">
         </a>
-        <?php var_dump( $BH_headerContactInfo); ?>
+        <?php var_dump($BH_headerContactInfo); ?>
 
         <nav id="nav-main" role="navigation">
           <?php if ($roots_options['clean_menu']) { ?>
