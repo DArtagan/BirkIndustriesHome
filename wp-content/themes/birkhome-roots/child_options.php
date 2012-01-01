@@ -112,18 +112,22 @@ case 'text':
 break;
 
 case 'textarea':
-		$ta_options = $value['options'];
-		?>
-		<tr valign="top">
-			<th scope="row"><label for="<?php echo $value['id']; ?>"><?php echo __($value['name'],'thematic'); ?></label></th>
-			<td><textarea name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="<?php echo $ta_options['rows']; ?>"><?php
-				if( get_option($value['id']) != "") {
-						echo __(stripslashes(get_option($value['id'])),'thematic');
-					}else{
-						echo __($value['std'],'thematic');
-				}?></textarea><br /><?php echo __($value['desc'],'thematic'); ?></td>
-		</tr>
-    break;
+
+$ta_options = $value['options'];
+?>
+
+<tr>
+    <td width="20%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong></td>
+    <td width="80%"><textarea name="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="<?php echo $ta_options['rows']; ?>"><?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?></textarea></td>
+
+</tr>
+
+<tr>
+    <td><small><?php echo $value['desc']; ?></small></td>
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #000000;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+<?php
+break;
 }
 }
 ?>
