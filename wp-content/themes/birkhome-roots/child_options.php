@@ -118,7 +118,7 @@ $ta_options = $value['options'];
 
 <tr>
     <td width="20%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong></td>
-    <td width="80%"><textarea name="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="<?php echo $ta_options['rows']; ?>"><?php if ( get_settings( stripcslashes($value['id']) ) != "") { echo get_settings( stripcslashes($value['id']) ); } else { echo stripcslashes($value['std']); } ?></textarea></td>
+    <td width="80%"><textarea name="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="<?php echo $ta_options['rows']; ?>"><?php if ( get_settings( stripslashes($value['id']) ) != "") { echo get_settings( stripslashes($value['id']) ); } else { echo stripslashes($value['std']); } ?></textarea></td>
 
 </tr>
 
