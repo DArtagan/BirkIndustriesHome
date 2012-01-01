@@ -36,10 +36,17 @@
     <header id="banner" class="<?php global $roots_options; echo $roots_options['container_class']; ?>" role="banner">
       <?php roots_header_inside(); ?>
       <div class="container">
-
+        <?
+          // Retrieve BirkHome Theme Options
+          global $options;
+          foreach ($options as $value) {
+              if (stripslashes(get_settings( $value['id'] ) ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
+          }
+        ?>
         <a id="logo" href="<?php echo home_url(); ?>/">
           <img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>">
         </a>
+        <?php echo $BH_headerContactInfo; ?>
 
         <nav id="nav-main" role="navigation">
           <?php if ($roots_options['clean_menu']) { ?>
@@ -67,3 +74,5 @@
       </div>
     </header>
   <?php roots_header_after(); ?>
+
+

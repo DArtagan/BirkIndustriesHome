@@ -3,9 +3,9 @@
  * Options page for the theme
  */
 // the name of the theme
-$childname = "Child-Theme";
+$childname = "BirkHome Theme Options";
 // an abbreviation of the theme's name
-$childshortname = "bmct";
+$childshortname = "BH";
 
 $childoptions = array (
 	array ( "name" => "Welcome Message",
