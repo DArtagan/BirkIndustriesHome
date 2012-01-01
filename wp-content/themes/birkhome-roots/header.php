@@ -38,9 +38,10 @@
       <div class="container">
         <?
           // Retrieve BirkHome Theme Options
-          global $options;
-          foreach ($options as $value) {
-              if (stripslashes(get_settings( $value['id'] ) ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
+          global $childoptions;
+          foreach ($childoptions as $value) {
+            if (get_option( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; }
+            else { $$value['id'] = get_option( $value['id'] ); }
           }
         ?>
         <a id="logo" href="<?php echo home_url(); ?>/">
