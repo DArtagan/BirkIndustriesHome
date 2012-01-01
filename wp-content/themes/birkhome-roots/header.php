@@ -47,7 +47,7 @@
         <a id="logo" href="<?php echo home_url(); ?>/">
           <img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>">
         </a>
-        <?php echo $BH_headerContactInfo; ?>
+        <?php var_dump( $BH_headerContactInfo); ?>
 
         <nav id="nav-main" role="navigation">
           <?php if ($roots_options['clean_menu']) { ?>
